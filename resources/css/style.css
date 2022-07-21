@@ -1,0 +1,24 @@
+/* Body */
+body {
+    
+    text-align: center;
+}
+
+/* Header */
+header {
+    width: 100%;
+    display: inline-flex;
+    margin: 64px 24px;
+}
+
+#colmer {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+header nav {
+    display: inline-flex;
+    
+
+}
