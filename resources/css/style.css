@@ -1,24 +1,43 @@
 /* Body */
 body {
     
-    text-align: center;
+    
 }
 
 /* Header */
 header {
     width: 100%;
-    display: inline-flex;
-    margin: 64px 24px;
+    height: 64px;
+    margin-left: 24px;
+    margin-right: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #colmer {
-    display: inline-flex;
+    display: flex;
     align-items: center;
-    justify-content: flex-start;
+    font-size: 32px;
+    justify-content: space-between;
 }
 
 header nav {
-    display: inline-flex;
-    
-
+   text-align: right;
+   display: flex;
+   justify-content: space-between;
+   width: auto;
 }
+
+header nav a {
+    justify-content: space-around;
+    text-decoration: none;
+    color: black;
+    font-size: 32px;
+    text-align: right;
+    
+}
+
+/* Main */
+
+/* Part-1 */
