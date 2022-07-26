@@ -3,7 +3,8 @@ h2 {
     font-size: 70px;
 }
 h3 {
-    font-size: 30px;
+    font-size: 40px;
+    font-weight: 500;
 }
 
 a {
@@ -164,6 +165,7 @@ header nav a {
 /* Guest */
 #guest {
     display: flex;
+    background-color: lightgrey;
 }
 
 #guest div {
@@ -257,15 +259,119 @@ header nav a {
 }
 .thesis {
     display: flex;
+    margin-bottom: 32px;
 }
+
 .video {
     display: flex;
     flex-direction: column;
     width: 60%;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-bottom: 24px;
+}
+
+.video video {
+    display: flex;
+    margin-bottom: 24px;
+}
+
+.video h3 {
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+.video p {
+    margin-top: 8px;
+    color: grey;
+    font-size: 30px;
 }
 
 .part-4 .articles {
     display: flex;
     flex-direction: column;
     width: 40%;
+    margin-left: 24px;
+    margin-right: 5px;
 }
+/* fisma */
+.fisma {
+    display: flex;
+    background-color: lightgrey;
+    justify-content: center;
+}
+
+.fisma img {
+    margin: 16px;
+    height: auto;
+    width: 35%;
+}
+
+.fisma div {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    justify-content: center;
+    margin-left: 16px;
+}
+
+.fisma div h3 {
+    margin-top: 32px;
+    margin-bottom: 12px;
+}
+
+.fisma div p {
+    font-size: 30px;
+    color: gray;
+    margin-top: 12px;
+    margin-bottom: 32px;
+}
+/* now-then */
+.now-then {
+    display: flex;
+    justify-content: center;
+}
+
+.now-then img {
+    margin: 16px;
+    height: auto;
+    width: 35%;
+}
+
+.now-then div {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    justify-content: center;
+    margin-left: 16px;
+}
+
+.now-then div h3 {
+    margin-top: 32px;
+    margin-bottom: 12px;
+}
+
+.now-then div p {
+    font-size: 30px;
+    color: gray;
+    margin-top: 12px;
+    margin-bottom: 32px;
+}
+
+/* footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+    margin-bottom: 50px;
+    margin-left: 24px;
+    font-size: 30px;
+    color: gray;
+}
+
+footer nav a {
+    color: gray;
+    margin: 10px;
+}
+
+
