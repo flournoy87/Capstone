@@ -105,38 +105,64 @@ header nav a {
 .part-2 {
     width: 100%;
     display: flex;
-    justify-content: space-between;
 }
 
 .left {
     display: flex;
     flex-direction: column;
     margin: 32px 24px;
-}
-
-.left img {
     width: 60%;
     height: auto;
 }
 
+.left img {
+    width: 100%;
+    height: auto;
+}
+
+.left h2 {
+    margin-top: 32px;
+    margin-bottom: 24px;
+}
+
 .left div {
-    width: 60%;
+    width: 100%;
     height: auto;
 }
 
 .left p {
     font-size: 25px;
+
+}
+
+#emanuel {
+    margin-top: 45px;
 }
 
 .right {
    display: flex;
    flex-direction: column;
    margin-left: 24px;
-   margin-top: 32px;
+   margin-bottom: 0px;
+   padding-bottom: 32px;
+   width: 40%;
+   border-left: 1px;
+   border-bottom: 0px;
+   border-right: 0px;
+   border-top: 0px;
+   border-color: lightgray;
+   border-style: solid;
 }
 /* orientation */
 #orientation {
     display: flex;
+    border-left: 0px;
+    border-bottom: 1px;
+    border-right: 0px;
+    border-top: 0px;
+    border-color: lightgray;
+    border-style: solid;
+    padding-top: 32px;
 }
 
 #orientation div {
@@ -149,7 +175,9 @@ header nav a {
 #orientation img {
     width: 35%;
     height: auto;
-    margin: 16px;
+    margin-bottom: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
 }
 
 #orientation div h3 {
@@ -167,6 +195,12 @@ header nav a {
 /* Campus */
 #campus {
     display: flex;
+    border-left: 0px;
+    border-bottom: 0px;
+    border-right: 0px;
+    border-top: 1px;
+    border-color: lightgray;
+    border-style: solid;
 }
 
 #campus div {
@@ -206,7 +240,6 @@ header nav a {
     display: flex;
     justify-content: center;
     flex-direction: column;
-   
 }
 
 #guest img {
@@ -230,12 +263,14 @@ header nav a {
 
 /* Part-3 */
 .part-3 {
+    display: flex;
+    flex-direction: column;
     background-color: lightgray;
 }
 .part-3 h2 {
     text-align: center;
     margin-top: 32px;
-    margin-bottom: 32px;
+    margin-bottom: 0px;
 }
 .part-3 .break {
     flex-basis: 100%;
@@ -245,19 +280,25 @@ header nav a {
     justify-content: center;
     margin: 32px 72px;
     flex-wrap: wrap;
+    gap: 32px;
+}
+
+.start-learning > * {
+    flex: 1 1 532px;
 }
 
 .part-3 .course {
-    margin: 32px;
     background-color: white;
     display: flex;
     flex-direction: column;
     align-items: baseline;
-    width: 532px;
+    max-width: 532px;
+  
 }
 
 .part-3 .course img {
     height: auto;
+    width: 100%;
 }
 
 .part-3 .course h3 {
@@ -307,17 +348,20 @@ header nav a {
 .video video {
     display: flex;
     margin-bottom: 24px;
+    width: 100%;
 }
 
 .video h3 {
     margin-top: 24px;
     margin-bottom: 8px;
+    width: 100%;
 }
 
 .video p {
     margin-top: 8px;
     color: grey;
     font-size: 30px;
+    width: 100%;
 }
 
 .part-4 .articles {
@@ -332,6 +376,7 @@ header nav a {
     display: flex;
     background-color: lightgrey;
     justify-content: center;
+    width: 100%;
 }
 
 .fisma img {
@@ -363,6 +408,7 @@ header nav a {
 .now-then {
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 .now-then img {
@@ -395,11 +441,17 @@ header nav a {
 footer {
     display: flex;
     justify-content: space-between;
-    margin-top: 16px;
+    padding-top: 16px;
     margin-bottom: 50px;
     margin-left: 24px;
     font-size: 30px;
     color: gray;
+    border-left: 0px;
+    border-bottom: 0px;
+    border-right: 0px;
+    border-top: 1px;
+    border-color: lightgray;
+    border-style: solid;
 }
 
 footer nav a {
