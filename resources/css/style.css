@@ -175,12 +175,16 @@ a {
     flex-direction: column;
 }
 
-#orientation img {
+#orientation-image {
     width: 35%;
     height: auto;
     margin-bottom: 16px;
     margin-left: 16px;
     margin-right: 16px;
+}
+
+#orientation-image-mobile {
+    display: none;
 }
 
 #orientation div h3 {
@@ -214,10 +218,14 @@ a {
    
 }
 
-#campus img {
+#campus-image {
     width: 35%;
     height: auto;
     margin: 16px;
+}
+
+#campus-image-mobile {
+    display: none;
 }
 
 #campus div h3 {
@@ -245,10 +253,14 @@ a {
     flex-direction: column;
 }
 
-#guest img {
+#guest-image {
     width: 35%;
     height: auto;
     margin: 16px;
+}
+
+#guest-image-mobile {
+    display: none;
 }
 
 #guest div h3 {
@@ -464,7 +476,7 @@ footer nav a {
 
 /* Mobile */
 @media only screen and (max-width: 600px) {
-    /* Header Mobile */
+    /* Header Mobile ---------*/
     .desktop-header {
         display: none;
     }
@@ -475,7 +487,7 @@ footer nav a {
         justify-content: space-around;
         align-items: center;
     }
-    /* Part-1 Mobile */
+    /* Part-1 Mobile ---------*/
     .part-1 {
         display: flex;
         flex-direction: column;
@@ -499,6 +511,7 @@ footer nav a {
     .part-1 h2 {
         margin-bottom: 32px;
     }
+
     .part-1 div p {
         font-size: 30px;
         margin-top: 15px;
@@ -507,5 +520,145 @@ footer nav a {
     
     .part-1 div button {
         width: 100%;
+    }
+
+    /* Part-2 Mobile--------------- */
+    .left {
+        display: none;
+    }
+
+    .right {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+        width: 100%;
+        border-style: none;
+     }
+     /* orientation mobile*/
+     #orientation {
+         display: flex;
+         border-style: none;
+         flex-direction: column;
+         padding: 16px 16px 32px 16px;
+     }
+     
+     #orientation div {
+         width: 100%;
+         display: flex;
+         align-items: baseline;
+         flex-direction: column;
+     }
+     
+     #orientation-image {
+         display: none;
+     }
+
+     #orientation-image-mobile {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+     }
+     
+     #orientation div h3 {
+         margin-left: 16px;
+         margin-bottom: 8px;
+     }
+     
+     #orientation div a {
+         margin-top: 0px;
+         margin-left: 16px;
+         font-size: 25px;
+     }
+     
+     #orientation div p {
+         font-size: 25px;
+         margin-left: 16px;
+         margin-top: 0px;
+         margin-bottom: 8px;
+     }
+     /* Campus mobile*/
+     #campus {
+         display: flex;
+         border-left: 0px;
+         border-bottom: 0px;
+         border-right: 0px;
+         border-top: 1px;
+         border-color: lightgray;
+         border-style: solid;
+     }
+     
+     #campus div {
+         width: 65%;
+         display: flex;
+         justify-content: center;
+         flex-direction: column;
+        
+     }
+     
+     #campus img {
+         width: 35%;
+         height: auto;
+         margin: 16px;
+     }
+     
+     #campus div h3 {
+         margin-bottom: 8px;
+     }
+     
+     #campus div a {
+         margin-top: 8px;
+         font-size: 25px;
+     }
+     
+     #campus div p {
+         font-size: 25px;
+     }
+     /* Guest mobile */
+     #guest {
+         display: flex;
+         background-color: lightgrey;
+     }
+     
+     #guest div {
+         width: 65%;
+         display: flex;
+         justify-content: center;
+         flex-direction: column;
+     }
+     
+     #guest img {
+         width: 35%;
+         height: auto;
+         margin: 16px;
+     }
+     
+     #guest div h3 {
+         margin-bottom: 8px;
+     }
+     
+     #guest div a {
+         margin-top: 8px;
+         font-size: 25px;
+     }
+     
+     #guest div p {
+         font-size: 25px;
+     }
+     
+
+    /* Footer */
+    footer {
+        display: flex;
+        justify-content: flex-start;
+        padding-top: 16px;
+        margin-bottom: 16px;
+        font-size: 20px;
+        border-style: none;
+        width: 100%;
+    }
+    
+    footer nav {
+        display: none;
     }
 }
